@@ -1,0 +1,26 @@
+﻿@page
+@model AspNetCoreSecurity.Pages.Account.LoginModel
+@{
+}
+<h2>Login</h2>
+<div class="row">
+    <div class="col-md-8">
+        <section>
+            <form method="post" class="form-horizontal" role="form">
+                <div class="form-group">
+                    <label class="col-md-2 control-label">UserName</label>
+                    <div class="col-md-10">
+                        <input type="text" name="username" autofocus />
+                    </div>
+                </div>
+                  <div class="form-group">
+                    <label class="col-md-2 control-label">Password</label>
+                    <div class="col-md-10">
+                        <input type="password" name="password"  />
+                    </div>
+                </div>
+                <input type="submit"  value="submit"/>
+            </form>
+        </section>
+    </div>
+</div>
