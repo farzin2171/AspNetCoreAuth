@@ -11,6 +11,13 @@ builder.Services.AddAuthentication("cookies")
 
        o.LoginPath = "/account/login";
        o.AccessDeniedPath = "/account/login";
+   }).AddGoogle("google" , o =>
+   {
+       o.ClientId = "635672167628-qc09tqq0rhe4hlf431ivqp5g30ab1e4r.apps.googleusercontent.com";
+       o.ClientSecret = "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";
+
+       //o.CallbackPath = "/signin-google";
+       o.SignInScheme = "cookies";
    });
 
 builder.Services.AddAuthorization(o =>
